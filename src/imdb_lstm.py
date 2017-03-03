@@ -24,7 +24,7 @@ model = Sequential()
 # Слой для векторного представления слов
 model.add(Embedding(max_features, 32, dropout=0.2))
 # Слой долго-краткосрочной памяти
-model.add(LSTM(100, dropout_W=0.2, dropout_U=0.2))  # try using a GRU instead, for fun
+model.add(LSTM(100, dropout_W=0.2, dropout_U=0.2)) 
 # Полносвязный слой
 model.add(Dense(1, activation="sigmoid"))
 
