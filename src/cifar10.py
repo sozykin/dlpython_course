@@ -3,7 +3,7 @@ from keras.datasets import cifar10
 from keras.models import Sequential
 from keras.layers import Dense, Flatten, Activation
 from keras.layers import Dropout
-from keras.layers.convolutional import Convolution2D, MaxPooling2D
+from keras.layers.convolutional import Conv2D, MaxPooling2D
 from keras.utils import np_utils
 from keras.optimizers import SGD
 
@@ -12,7 +12,6 @@ numpy.random.seed(42)
 
 # Загружаем данные
 (X_train, y_train), (X_test, y_test) = cifar10.load_data()
-
 # Размер мини-выборки
 batch_size = 32
 # Количество классов изображений
@@ -37,19 +36,19 @@ Y_test = np_utils.to_categorical(y_test, nb_classes)
 # Создаем последовательную модель
 model = Sequential()
 # Первый сверточный слой
-model.add(Convolution2D(32, 3, 3, border_mode='same',
-                        input_shape=(3, 32, 32), activation='relu'))
+model.add(Conv2D(32, (3, 3), padding='same',
+                        input_shape=(32, 32, 3), activation='relu'))
 # Второй сверточный слой
-model.add(Convolution2D(32, 3, 3, activation='relu'))
+model.add(Conv2D(32, (3, 3), activation='relu', padding='same'))
 # Первый слой подвыборки
 model.add(MaxPooling2D(pool_size=(2, 2)))
 # Слой регуляризации Dropout
 model.add(Dropout(0.25))
 
 # Третий сверточный слой
-model.add(Convolution2D(64, 3, 3, border_mode='same', activation='relu'))
+model.add(Conv2D(64, (3, 3), padding='same', activation='relu'))
 # Четвертый сверточный слой
-model.add(Convolution2D(64, 3, 3, activation='relu'))
+model.add(Conv2D(64, (3, 3), activation='relu'))
 # Второй слой подвыборки
 model.add(MaxPooling2D(pool_size=(2, 2)))
 # Слой регуляризации Dropout
@@ -71,9 +70,10 @@ model.compile(loss='categorical_crossentropy',
 # Обучаем модель
 model.fit(X_train, Y_train,
               batch_size=batch_size,
-              nb_epoch=nb_epoch,
+              epochs=nb_epoch,
               validation_split=0.1,
-              shuffle=True)
+              shuffle=True,
+              verbose=2)
 
 # Оцениваем качество обучения модели на тестовых данных
 scores = model.evaluate(X_test, Y_test, verbose=0)
