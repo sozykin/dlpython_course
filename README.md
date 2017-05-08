@@ -4,9 +4,10 @@
 
 ## Примеры
 
-1. Распознавание рукописных цифр из набора данных [MNIST](http://yann.lecun.com/exdb/mnist/) - `mnist.py`. Используется полносвязная нейронная сеть.
-2. Распознавание объектов на изображениях из набора данных [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) - `cifar10.py`. Используется сверточная нейронная сеть.
-3. Определение тональности отзывов на фильмы из [IMDB Movie Review Dataset](http://ai.stanford.edu/~amaas/data/sentiment/) - `imdb_lstm.py`. Используется рекуррентная сеть LSTM.
+1. Распознавание рукописных цифр из набора данных [MNIST](http://yann.lecun.com/exdb/mnist/) - `mnist`. Используется полносвязная и сверточная нейронные сети.
+2. Распознавание объектов на изображениях из набора данных [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) - `cifar10`. Используется сверточная нейронная сеть.
+3. Определение тональности отзывов на фильмы из [IMDB Movie Review Dataset](http://ai.stanford.edu/~amaas/data/sentiment/) - `imdb`. Используется рекуррентная сеть LSTM.
+4. Сохранение обученной нейронной сети - `saving_models`.
 
 ## Необходимое ПО
 
