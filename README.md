@@ -15,11 +15,12 @@
 
 1. Python 3.
 2. Библиотека глубокого обучения [Keras](https://keras.io/).
-3. Библиотека [Theano](http://deeplearning.net/software/theano/) (используется в качестве вычислительного бекенда для Keras).
+3. Библиотеки [Theano](http://deeplearning.net/software/theano/) или [TensorFlow](https://www.tensorflow.org/) (используются в качестве вычислительного бекенда для Keras).
 
 [Инструкция по установке Keras и Theano в Anaconda](https://www.asozykin.ru/deep_learning/2016/12/25/Keras-Installation.html).
+[Инструкция по установке Keras и TensorFlow в Anaconda](https://www.asozykin.ru/deep_learning/2017/09/07/Keras-Installation-TensorFlow.html).
 
-Можно вместо Theano использовать [TensorFlow](https://www.tensorflow.org/), но с ней примеры не тестировались. Возможны проблемы из-за разных подходов к использованию размерностей тензоров.
+Примеры тестировалис с Theano. С TensorFlow возможны проблемы из-за разных подходов к использованию размерностей тензоров.
 
 ## Благодарности
 
