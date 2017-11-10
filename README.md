@@ -10,7 +10,7 @@
 4. Прогноз стоимости домов для набора данных [Boston Housing](https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html) - `regression`. Пример решения задачи регрессии.
 5. Использование предварительно обученных нейронных сетей - `pretrained_networks`
 6. Сохранение обученной нейронной сети - `saving_models`.
-7. Примеры задач компютерного зрения - `computer_vision`.
+7. Примеры задач компьютерного зрения - `computer_vision`.
 
 ## Необходимое ПО
 
