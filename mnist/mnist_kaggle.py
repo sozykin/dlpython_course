@@ -28,9 +28,9 @@ if not os.path.isfile(TRAIN_FILE) or not os.path.isfile(TEST_FILE):
 train_dataset = np.loadtxt(TRAIN_FILE, skiprows=1, dtype='int', delimiter=",")
 # Выделяем данные для обучения
 x_train = train_dataset[:, 1:]
-# Переформатируем данные в 2D, бэкенд Theano
-x_train = x_train.reshape(x_train.shape[0], 1, img_rows, img_cols)
-input_shape = (1, img_rows, img_cols)
+# Переформатируем данные в 2D, бэкенд Tensorflow
+x_train = x_train.reshape(x_train.shape[0], img_rows, img_cols, 1)
+input_shape = (img_rows, img_cols, 1)
 # Нормализуем данные
 x_train = x_train.astype("float32")
 x_train /= 255.0
@@ -43,8 +43,8 @@ y_train = np_utils.to_categorical(y_train)
 
 #Загружаем данные для предсказания
 test_dataset = np.loadtxt(TEST_FILE, skiprows=1, delimiter=",")
-# Переформатируем данные в 2D, бэкенд Theano
-x_test = test_dataset.reshape(test_dataset.shape[0], 1, img_rows, img_cols)
+# Переформатируем данные в 2D, бэкенд TensorFlow
+x_test = test_dataset.reshape(test_dataset.shape[0], img_rows, img_cols, 1)
 x_test /= 255.0
 
 
