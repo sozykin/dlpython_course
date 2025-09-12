@@ -15,16 +15,12 @@
 ## Необходимое ПО
 
 1. Python 3.
-2. Библиотека глубокого обучения [Keras](https://keras.io/).
-3. Библиотеки  [TensorFlow](https://www.tensorflow.org/) или [Theano](http://deeplearning.net/software/theano/) (используются в качестве вычислительного бекенда для Keras).
+2. Библиотеки [TensorFlow](https://www.tensorflow.org/) и [PyTorch](https://pytorch.org/).
 
-Инструкция по установке:
+## Рекомендуемая литература
 
-- [Keras и TensorFlow в Anaconda](https://www.asozykin.ru/deep_learning/2017/09/07/Keras-Installation-TensorFlow.html).
-- [Keras и Theano в Anaconda](https://www.asozykin.ru/deep_learning/2016/12/25/Keras-Installation.html).
-
-Примеры тестировались с TensorFlow. При использовании Theano возможны проблемы из-за разных подходов к хранению изображений.
+1. François Chollet, Matthew Watson. [Deep Learning with Python](https://deeplearningwithpython.io/). Книга создателя Keras о нейроных сетях. Вся книга доступна бесплатно. [Репозиторий с примерами кода из книги на GitHub](https://github.com/fchollet/deep-learning-with-python-notebooks).
 
 ## Благодарности
 
-При реализации проекта используются средства поддержки, выделенные в качестве гранта на основании конкурса, проведенного Общероссийской общественно-государственной просветительской организации «Российское общество «Знание».
+При реализации первой версии курсы были использованы средства поддержки, выделенные в качестве гранта на основании конкурса, проведенного Общероссийской общественно-государственной просветительской организации «Российское общество «Знание».
