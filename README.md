@@ -4,13 +4,12 @@
 
 ## Примеры
 
-1. Распознавание рукописных цифр из набора данных [MNIST](http://yann.lecun.com/exdb/mnist/) - `mnist`. Используется полносвязная и сверточная нейронные сети.
-2. Распознавание объектов на изображениях из набора данных [CIFAR-10](https://www.cs.toronto.edu/~kriz/cifar.html) - `cifar10`. Используется сверточная нейронная сеть.
-3. Определение тональности отзывов на фильмы из [IMDB Movie Review Dataset](http://ai.stanford.edu/~amaas/data/sentiment/) - `imdb`. Используется рекуррентная сеть LSTM.
-4. Прогноз стоимости домов для набора данных [Boston Housing](https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html) - `regression`. Пример решения задачи регрессии.
-5. Использование предварительно обученных нейронных сетей - `pretrained_networks`
-6. Сохранение обученной нейронной сети - `saving_models`.
-7. Примеры задач компьютерного зрения - `computer_vision`.
+1. `introduction` - основы нейронных сетей на Keras и TensorFlow. Примеры задач классификации (распознавание моделей одежды Fashion-MNIST) и регрессии (определение стоимости недвижимости California Housing).
+2. `computer_vision` - примеры решения задач компьютерного зрения.
+3. `pretrained_networks` - использование предварительно обученных нейронных сетей.
+4. `transfer_learning` - перенос обучения (transfer learning).
+5. `keras_callbacks` - примеры использования callbacks в Keras.
+6. `archive` - архив с устаревшими примерами.
 
 ## Необходимое ПО
 
@@ -20,6 +19,7 @@
 ## Рекомендуемая литература
 
 1. François Chollet, Matthew Watson. [Deep Learning with Python](https://deeplearningwithpython.io/). Книга создателя Keras о нейроных сетях. Вся книга доступна бесплатно. [Репозиторий с примерами кода из книги на GitHub](https://github.com/fchollet/deep-learning-with-python-notebooks).
+2. Aston Zhang, Zachary C. Lipton, Mu Li, Alexander J. Smola. [Dive into Deep Learning](https://d2l.ai/). Интерактивный учебник по глубоким нейронным сетям с примерами кода на PyTorch, MXNet, JAX и TensorFlow. Доступен бесплатно, [исходные коды на GitHub](https://github.com/d2l-ai/d2l-en).
 
 ## Благодарности
 
