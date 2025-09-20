@@ -5,7 +5,7 @@
 ## Примеры
 
 1. `introduction` - основы нейронных сетей на Keras и TensorFlow. Примеры задач классификации (распознавание моделей одежды Fashion-MNIST) и регрессии (определение стоимости недвижимости California Housing).
-2. `computer_vision` - примеры решения задач компьютерного зрения.
+2. `cnn` - примеры использования сверточных нейронных сетей на TensorFlow (Keras) и PyTorch. 
 3. `pretrained_networks` - использование предварительно обученных нейронных сетей.
 4. `transfer_learning` - перенос обучения (transfer learning).
 5. `keras_callbacks` - примеры использования callbacks в Keras.
