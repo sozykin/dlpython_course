@@ -87,3 +87,21 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# PyTorch and Machine Learning Specific
+*.pth
+*.pt
+*.onnx
+*.safetensors
+*.ckpt
+*.bin
+model_weights/
+checkpoints/
+runs/
+logs/
+data/
+datasets/
+results/
+output/
+wandb/
+.pytest_cache/
