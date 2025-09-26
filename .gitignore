@@ -105,3 +105,6 @@ results/
 output/
 wandb/
 .pytest_cache/
+
+# TensorFlow and Keras Specific
+*.keras
