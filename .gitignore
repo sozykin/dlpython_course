@@ -108,3 +108,7 @@ wandb/
 
 # TensorFlow and Keras Specific
 *.keras
+
+# Data
+*.csv
+*.zip
